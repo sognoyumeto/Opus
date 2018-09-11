@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scanner View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ScannerViewController" customModule="QR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ea6-OP-gqz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Camera Guides Copy.png" translatesAutoresizingMaskIntoConstraints="NO" id="aMV-Zv-y98">
+                                        <rect key="frame" x="67" y="213" width="240" height="240"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="4JG-TA-hXV"/>
+                                            <constraint firstAttribute="height" constant="240" id="bss-qw-N8f"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="AMATORIUM.png" translatesAutoresizingMaskIntoConstraints="NO" id="SUS-qS-aFX">
+                                        <rect key="frame" x="85" y="547" width="204" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="SUS-qS-aFX" secondAttribute="height" multiplier="17:2" id="yGc-p8-21k"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.949462890625" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="SUS-qS-aFX" secondAttribute="trailing" constant="86" id="Lgf-ee-hdA"/>
+                                    <constraint firstItem="SUS-qS-aFX" firstAttribute="centerY" secondItem="ea6-OP-gqz" secondAttribute="centerY" constant="203" id="PHw-Fw-iV9"/>
+                                    <constraint firstItem="SUS-qS-aFX" firstAttribute="leading" secondItem="ea6-OP-gqz" secondAttribute="leading" constant="85" id="T19-bu-DdE"/>
+                                    <constraint firstItem="aMV-Zv-y98" firstAttribute="centerX" secondItem="ea6-OP-gqz" secondAttribute="centerX" id="rg0-rz-gEA"/>
+                                    <constraint firstItem="aMV-Zv-y98" firstAttribute="centerY" secondItem="ea6-OP-gqz" secondAttribute="centerY" id="zj9-gs-uc5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ea6-OP-gqz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3HF-ut-L7m"/>
+                            <constraint firstItem="ea6-OP-gqz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5Ov-Dc-htX"/>
+                            <constraint firstItem="ea6-OP-gqz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FnZ-8u-Gy1"/>
+                            <constraint firstItem="ea6-OP-gqz" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="IWP-ph-VDR"/>
+                            <constraint firstItem="ea6-OP-gqz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="J1m-n6-GGR"/>
+                            <constraint firstItem="ea6-OP-gqz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jQP-DV-uCy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="focus" destination="aMV-Zv-y98" id="Wdc-B7-4Ou"/>
+                        <outlet property="layer" destination="ea6-OP-gqz" id="vCO-FS-xvX"/>
+                        <outlet property="logo" destination="SUS-qS-aFX" id="L3n-Xb-heL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2471" y="-147"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AMATORIUM.png" width="204" height="24"/>
+        <image name="Camera Guides Copy.png" width="224" height="224"/>
+    </resources>
+</document>
